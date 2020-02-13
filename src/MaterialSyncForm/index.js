@@ -47,6 +47,10 @@ const useStyles = makeStyles(theme => ({
         textTransform: 'none',
         boxShadow: 'none',
     },
+    header: {
+        fontWeight: "bold",
+        fontSize: 18,
+    },
 }));
 
 const MyForm = props => {
@@ -144,8 +148,8 @@ const MyEnhancedForm = withFormik({
 
 const MaterialSyncValidationForm = () => (
     <div className="app">
-        <Typography>
-            Project/Pre-published Data collection template
+        <Typography style={{ fontWeight: 'bold', fontSize: 18, margin: 12 }}>
+            Formik Sync Validation with Material-UI components with Custom Style
         </Typography>
 
         <MyEnhancedForm />
